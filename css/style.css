@@ -8,11 +8,14 @@
     --navbar-height: 60px;
     scrollbar-width: thin;
     font-family: "Segoe UI", sans-serif;
+    scroll-behavior: smooth;
 }
-
 body {
+    overflow-x: hidden;
+    overflow-y: scroll;
     --max-width-navbar: 1100px;
     --max-width: 1030px;
+    height: 100vh;
 }
 
 .imageContenueW {
@@ -26,13 +29,12 @@ body {
 #content {
     width: 100%;
 
-    padding-top: var(--navbar-height);
 
 
 }
 
 section {
-    padding-top: 30px;
+    padding-top: 40px;
     padding-bottom: 50px;
     display: flex;
     align-items: center;
@@ -41,7 +43,7 @@ section {
 
 #presentation {
     background-color: #fff6f6;
-    /*background-image: url("/images/OrchestreP24.jpg");*/
+    padding-top: 90px;
 }
 
 
@@ -93,4 +95,16 @@ h2 {
     color: var(--accent-f);
     background-color: var(--text-color);
     border-color: var(--text-color);
+}
+
+#copyright {
+    background-color: #212529;
+
+    text-align: center;
+    padding: 10px;
+}
+#copyright p {
+    color: #fff;
+    font-weight: 400;
+    font-size: 0.8rem;
 }

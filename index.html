@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="css/contact.css">
     <script src="js/main.js"></script>
 </head>
+
 <body>
 <div class="fermerMobile navbardepl"></div>
 <div class="navbar">
@@ -18,34 +19,34 @@
 
 
         <div id="mobilebarContent">
-        <a id="logo" href="/">
-            <img style="height: 100%;
+            <a id="logo" href="/">
+                <img style="height: 100%;
 box-sizing: border-box; padding: 5px"
-                 src="/images/logos/LogoStravaganza.png"
-                 alt="Accueil">
-            <p class="navTitle">Stravaganza</p></a>
+                     src="/images/logos/LogoStravaganza.png"
+                     alt="Accueil">
+                <p class="navTitle">Stravaganza</p></a>
             <div class="showMobile" style="flex: 1;">
-        </div>
-        <div class="hamburger showMobile">
-            <button onclick="show_ban();" class="burgerButton"><img src="/images/logos/burger.svg"/></button>
-        </div>
+            </div>
+            <div class="hamburger showMobile">
+                <button onclick="show_ban();" class="burgerButton"><img id="burgerButton" style="display: block" src="/images/logos/burger.svg"/><img id="closeButton" style="display: none" src="/images/logos/close.svg"/></button>
+            </div>
         </div>
         <nav class="liensNav">
             <ul class="liensNavUl fermerMobile">
                 <li class="navItem">
-                    <a class="navLink">L'orchestre</a>
+                    <a class="navLink" onclick="show_ban();" href="/#presentation">L'orchestre</a>
                 </li>
                 <li class="navItem">
-                    <a class="navLink">Concerts</a>
+                    <a class="navLink" onclick="show_ban();" href="/#concerts">Concerts</a>
                 </li>
                 <li class="navItem">
-                    <a class="navLink">Actualités</a>
+                    <a class="navLink" onclick="show_ban();" href="/actualites.html">Actualités</a>
                 </li>
                 <li class="navItem">
-                    <a class="navLink">Galerie</a>
+                    <a class="navLink" onclick="show_ban();" href="/galerie.html">Galerie</a>
                 </li>
                 <li class="navItem">
-                    <a class="navLink">Contact</a>
+                    <a class="navLink" onclick="show_ban();" href="/#contact">Contact</a>
                 </li>
 
             </ul>
@@ -62,6 +63,7 @@ box-sizing: border-box; padding: 5px"
 
     </div>
 </div>
+
 
 <div id="content">
     <section id="presentation">
@@ -147,6 +149,9 @@ box-sizing: border-box; padding: 5px"
         </div>
 
     </section>
+    <div id="copyright">
+        <p>© 2024. All Rights Reserved.</p>
+    </div>
 </div>
 
 </body>

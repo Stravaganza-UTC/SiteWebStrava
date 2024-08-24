@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Stravaganza</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/navbar.css">
+    <link rel="stylesheet" href="css/presentation.css">
+    <link rel="stylesheet" href="css/contact.css">
+    <link rel="stylesheet" href="css/actualites.css">
+    <script src="js/main.js"></script>
+</head>
+
+<body>
+<div class="fermerMobile navbardepl"></div>
+<div class="navbar">
+    <div class="navbarIn">
+
+
+        <div id="mobilebarContent">
+            <a id="logo" href="/">
+                <img style="height: 100%;
+box-sizing: border-box; padding: 5px"
+                     src="/images/logos/LogoStravaganza.png"
+                     alt="Accueil">
+                <p class="navTitle">Stravaganza</p></a>
+            <div class="showMobile" style="flex: 1;">
+            </div>
+            <div class="hamburger showMobile">
+                <button onclick="show_ban();" class="burgerButton"><img id="burgerButton" style="display: block"
+                                                                        src="/images/logos/burger.svg"/><img
+                        id="closeButton" style="display: none" src="/images/logos/close.svg"/></button>
+            </div>
+        </div>
+        <nav class="liensNav">
+            <ul class="liensNavUl fermerMobile">
+                <li class="navItem">
+                    <a class="navLink" onclick="show_ban();" href="/#presentation">L'orchestre</a>
+                </li>
+                <li class="navItem">
+                    <a class="navLink" onclick="show_ban();" href="/#concerts">Concerts</a>
+                </li>
+                <li class="navItem">
+                    <a class="navLink" onclick="show_ban();" href="/actualites.html">Actualités</a>
+                </li>
+                <li class="navItem">
+                    <a class="navLink" onclick="show_ban();" href="/galerie.html">Galerie</a>
+                </li>
+                <li class="navItem">
+                    <a class="navLink" onclick="show_ban();" href="/#contact">Contact</a>
+                </li>
+
+            </ul>
+        </nav>
+        <ul class="liensNavSoc fermerMobile">
+            <a class="navLink" href="https://instagram.com/stravaganza_utc">
+                <img src="/images/logos/instagram.svg" alt="Instagram"></a>
+            <a class="navLink" href="https://facebook.com/stravaganza.utc">
+                <img src="/images/logos/facebook.svg" alt="Facebook"></a>
+            <a class="navLink" href="mailto:stravaganza@assos.utc.fr">
+                <img src="/images/logos/mail.svg" alt="Mail"></a>
+
+        </ul>
+
+    </div>
+</div>
+
+
+<div id="content">
+    <section id="presentationActus">
+
+        <div class="contenu contenuPres">
+            <div class="presentationTexte">
+                <h1>Actualités</h1>
+            </div>
+        </div>
+
+    </section>
+    <section class="actualiteLeft">
+        <div class="contenuActu contenu">
+            <div class="contenuActuImage">
+                <img src="/images/AffichePrintempsP24.jpg" class="card-img-top" alt="Concert de Printemps P24">
+            </div>
+            <div class="contenuActuTexte">
+                <div class="actuDateEtTitre">
+                    <p class="actuDate">11 juin 2024</p>
+                    <p class="actuTitle">Concert de Printemps P24</p>
+                </div>
+                <p class="actuDescr">20h, église Saint Germain (Compiègne)</p>
+                <a href="galerie.html#printempsP24" class="bouton">Galerie</a>
+            </div>
+
+        </div>
+
+    </section>
+    <section class="actualiteRight">
+        <div class="contenuActu contenu">
+            <div class="contenuActuTexte">
+                <div class="actuDateEtTitre">
+                <p class="actuDate">11 juin 2024</p>
+                <p class="actuTitle">Concert de Printemps P24</p>
+                </div>
+                <p class="actuDescr">20h, église Saint Germain (Compiègne)</p>
+                <a href="galerie.html#printempsP24" class="bouton">Galerie</a>
+            </div>
+            <div class="contenuActuImage">
+                <img src="/images/AffichePrintempsP24.jpg" class="card-img-top" alt="Concert de Printemps P24">
+            </div>
+
+        </div>
+
+    </section>
+
+    <div id="copyright">
+        <p>© 2024. All Rights Reserved.</p>
+    </div>
+</div>
+
+</body>
+<footer></footer>
+</html>

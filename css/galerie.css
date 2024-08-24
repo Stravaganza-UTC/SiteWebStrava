@@ -1,0 +1,62 @@
+#presentationGalerie {
+
+    padding-top: 90px;
+    padding-bottom: 0;
+    background-color: var(--rose-bg);
+    text-wrap: auto;
+}
+
+#presentationGalerie p {
+    text-wrap: auto;
+}
+
+#presentationGalerie h1 {
+    font-size: 4rem;
+}
+
+.galerieLogo {
+    width: 100%;
+    object-fit: contain;
+    padding: 15px;
+    max-height: 200px;
+}
+
+#presentationGalerie .contenu {
+    flex-direction: column;
+}
+
+#galeriePres {
+    /*margin-left: 15px;*/
+    margin-right: 15px;
+    display: flex;
+    max-width: var(--max-width);
+    width: 100%;
+    text-wrap: balance;
+}
+#galerieBts {
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+.galerieTitle {
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 0;
+    padding: 5px 10px 0;
+}
+
+.galerieSubTitle {
+    text-align: center;
+    font-size: 1.25rem;
+    font-weight: 500;
+    margin-bottom: 10px;
+    padding-top: 5px;
+    padding-bottom: 10px;
+}
+.contenuGalerieTexte {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    flex: 2;
+    align-items: center;
+}

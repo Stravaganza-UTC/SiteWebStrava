@@ -2,6 +2,7 @@
     --text-color: #212529;
     --accent-f: #ffe0e0;
     --accent-b: #ec5252;
+    --rose-bg: #fff6f6;
     color: var(--text-color);
     margin: 0;
     padding: 0;
@@ -42,7 +43,7 @@ section {
 }
 
 #presentation {
-    background-color: #fff6f6;
+    background-color: var(--rose-bg);
     padding-top: 90px;
 }
 

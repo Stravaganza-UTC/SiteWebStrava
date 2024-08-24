@@ -9,7 +9,6 @@
 }
 
 .contenuActu {
-    /*background: red;*/
     display: flex;
 }
 
@@ -52,17 +51,23 @@
 
 .actuDescr {
     margin-bottom: 10px;
+}
 
+.actualiteLeft .contenuActu {
+    flex-direction: row-reverse;
+}
+
+.actualiteRight {
+    background-color: var(--rose-bg);
 }
 
 @media (max-width: 992px) {
-    .actualiteRight .contenuActu {
-        flex-direction: column-reverse;
+    .contenuActu {
+        flex-direction: column-reverse !important;
+        /*    column-reverse : texte en dessous
+              column         : texte au dessus */
     }
 
-    .actualiteLeft .contenuActu {
-        flex-direction: column;
-    }
 
     .actuDateEtTitre {
         flex-direction: column-reverse;

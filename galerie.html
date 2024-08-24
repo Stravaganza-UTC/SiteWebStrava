@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="css/presentation.css">
     <link rel="stylesheet" href="css/contact.css">
     <link rel="stylesheet" href="css/actualites.css">
+    <link rel="stylesheet" href="css/galerie.css">
     <script src="js/main.js"></script>
 </head>
 
@@ -28,7 +29,13 @@ box-sizing: border-box; padding: 5px"
             <div class="showMobile" style="flex: 1;">
             </div>
             <div class="hamburger showMobile">
-                <button onclick="show_ban();" class="burgerButton"><img id="burgerButton" style="display: block" src="/images/logos/burger.svg" alt="Ouvrir le menu"/><img id="closeButton" style="display: none" src="/images/logos/close.svg" alt="Fermer le menu"/></button>
+                <button onclick="show_ban();" class="burgerButton"><img id="burgerButton" style="display: block"
+                                                                        src="/images/logos/burger.svg"
+                                                                        alt="Ouvrir le menu"/><img id="closeButton"
+                                                                                                   style="display: none"
+                                                                                                   src="/images/logos/close.svg"
+                                                                                                   alt="Fermer le menu"/>
+                </button>
             </div>
         </div>
         <nav class="liensNav">
@@ -66,24 +73,43 @@ box-sizing: border-box; padding: 5px"
 
 
 <div id="content">
-    <section id="presentationActus">
-
-        <div class="contenu contenuPres">
-            <div class="presentationTexte">
-                <h1>Actualités</h1>
+    <section id="presentationGalerie">
+        <div class="contenu">
+            <div id="galeriePres" class="contenuPres">
+                <div class="presentationTexte">
+                    <h1>Galerie</h1>
+                    <p>Nous avons la chance de collaborer avec les associations utécennes SSP, Décibels et Pics'Art pour
+                        la captation audio, vidéo et photo de nos concerts.
+                    </p>
+                </div>
+                <div class="presentationImage">
+                    <img src="/images/logos/LogoPicsArt.png" class="galerieLogo" alt="Logo">
+                    <img src="/images/logos/LogoSSP.png" class="galerieLogo" alt="Logo">
+                    <img src="/images/logos/LogoDeciBels.png" class="galerieLogo" alt="Logo">
+                </div>
+            </div>
+            <div id="galerieBts" style="text-align: center;">
+                <a href="#printempsP24" class="bouton">Concert de Printemps P24</a>
+                <a href="#noelA23" class="bouton">Concert de Noël A23</a>
+                <a href="#printempsP23" class="bouton">Concert de Printemps P23</a>
+                <a href="#noelA22" class="bouton">Concert de Noël A22</a>
+                <a href="#printempsP22" class="bouton">Concert de Printemps P22</a>
+                <a href="#20ansA21" class="bouton">Concert des 20 ans de Strava</a>
+                <a href="#printempsP19" class="bouton">Concert de Printemps P19</a>
+                <a href="#noelA19" class="bouton">Concert de Noël A19</a>
             </div>
         </div>
 
     </section>
     <section class="actualiteLeft">
         <div class="contenuActu contenu">
-            <div class="contenuActuTexte">
-                <div class="actuDateEtTitre">
-                    <p class="actuDate">11 juin 2024</p>
-                    <p class="actuTitle">Concert de Printemps P24</p>
-                </div>
-                <p class="actuDescr">20h, église Saint Germain (Compiègne)</p>
-                <a href="galerie.html#printempsP24" class="bouton">Galerie</a>
+            <div class="contenuGalerieTexte">
+
+                <p class="galerieTitle">Concert de Printemps P24</p>
+                <p class="galerieSubTitle">Traditionel concert de fin de semestre</p>
+
+                <p class="galerieDescr">11 juin 2024 à l'église Saint Germain<br>Avec la participation de As2Choeur</p>
+
             </div>
             <div class="contenuActuImage">
                 <img src="/images/ConcertPrintempsP24/AffichePrintempsP24.jpg" class="card-img-top" alt="Concert de Printemps P24">
@@ -94,20 +120,20 @@ box-sizing: border-box; padding: 5px"
     </section>
     <section class="actualiteRight">
         <div class="contenuActu contenu">
-            <div class="contenuActuTexte">
-                <div class="actuDateEtTitre">
-                <p class="actuDate">11 juin 2024</p>
-                <p class="actuTitle">Concert de Printemps P24</p>
-                </div>
-                <p class="actuDescr">20h, église Saint Germain (Compiègne)</p>
-                <a href="galerie.html#printempsP24" class="bouton">Galerie</a>
+            <div class="contenuGalerieTexte">
+
+                <p class="galerieTitle">Concert de Printemps P24</p>
+                <p class="galerieSubTitle">Traditionel concert de fin de semestre</p>
+
+                <p class="galerieDescr">11 juin 2024 à l'église Saint Germain<br>Avec la participation de As2Choeur</p>
+
             </div>
             <div class="contenuActuImage">
                 <img src="/images/ConcertPrintempsP24/AffichePrintempsP24.jpg" class="card-img-top" alt="Concert de Printemps P24">
             </div>
 
         </div>
-
+        <!--Carousel de photos dans la section en dessous de la présentation-->
     </section>
 
     <div id="copyright">

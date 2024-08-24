@@ -1,0 +1,194 @@
+/* Barre de navigation*/
+.navbar {
+    background-color: rgb(255, 224, 224);
+    height: var(--navbar-height);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Intérieur de la barre de navigation */
+.navbarIn {
+    flex: 1;
+    height: 100%;
+    display: flex;
+    align-items: center;
+
+    max-width: var(--max-width-navbar);
+    margin-left: auto;
+    margin-right: auto;
+    /*background: green;*/
+
+}
+
+/* Contenant les liens de navigation */
+.liensNav {
+    flex: 1;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+#logo {
+
+    display: flex;
+    cursor: pointer;
+
+    height: 100%;
+    text-decoration: none;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+/* Lien de navigation */
+.navTitle {
+    font-weight: bold;
+    padding: 10px;
+    font-size: 1.5rem;
+}
+
+/* Lien du logo */
+.navItem {
+    list-style: none;
+    padding: 25px;
+    flex: 1;
+}
+
+.navLink {
+    font-size: 1.1rem;
+    transition: all 0.2s;
+    cursor: pointer;
+}
+
+.navLink:hover {
+    color: var(--accent-b);
+}
+
+.liensNavUl {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+
+}
+
+.liensNavSoc {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    /*background: red;*/
+}
+
+.liensNavSoc a {
+
+    display: flex;
+    height: 100%;
+}
+
+.liensNavSoc a img {
+    height: 100%;
+    box-sizing: border-box;
+    padding: 15px 7px;
+}
+
+#mobilebarContent {
+
+    height: 100%;
+
+    display: flex;
+}
+
+.hamburger {
+    height: 100%;
+    z-index: 100;
+}
+
+.showMobile {
+    display: none;
+}
+
+@media (max-width: 992px) {
+    #mobilebarContent {
+        flex: 1;
+        width: 100%;
+
+    }
+
+    .showMobile {
+        display: flex;
+    }
+
+    .navbarIn {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .liensNavUl {
+        border-top: 1px solid black;
+        flex-direction: column;
+        flex: 1;
+        align-items: flex-start;
+
+    }
+
+    .liensNav {
+        justify-content: left;
+        height: unset;
+    }
+
+    .liensNavSoc {
+        flex: 1;
+        justify-content: left;
+        width: calc(90% - 18px);
+        margin-left: 18px;
+
+    }
+
+    .fermerMobile {
+        display: none;
+        background-color: rgb(255, 235, 235);
+    }
+
+    .navbardepl {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+        z-index: 1;
+    }
+
+    body {
+        /*overflow: hidden;*/
+    }
+
+}
+.burgerButton {
+    background: none;
+    border: none;
+    cursor: pointer;
+    height: 100%;
+}
+.burgerButton img {
+
+    height: 100%;
+    padding: 10px;
+
+    box-sizing: border-box;
+}
+

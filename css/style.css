@@ -1,0 +1,96 @@
+* {
+    --text-color: #212529;
+    --accent-f: #ffe0e0;
+    --accent-b: #ec5252;
+    color: var(--text-color);
+    margin: 0;
+    padding: 0;
+    --navbar-height: 60px;
+    scrollbar-width: thin;
+    font-family: "Segoe UI", sans-serif;
+}
+
+body {
+    --max-width-navbar: 1100px;
+    --max-width: 1030px;
+}
+
+.imageContenueW {
+    width: 100%;
+}
+
+#content * {
+    overflow: hidden;
+}
+
+#content {
+    width: 100%;
+
+    padding-top: var(--navbar-height);
+
+
+}
+
+section {
+    padding-top: 30px;
+    padding-bottom: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#presentation {
+    background-color: #fff6f6;
+    /*background-image: url("/images/OrchestreP24.jpg");*/
+}
+
+
+
+.contenuConcerts {
+    flex-direction: column;
+    align-items: center;
+    display: flex;
+}
+
+h2 {
+    margin-top: 30px;
+    font-weight: 700;
+    font-size: 3rem;
+}
+
+
+.contenu {
+    margin-left: 15px;
+    margin-right: 15px;
+    display: flex;
+    max-width: var(--max-width);
+    width: 100%;
+    text-wrap: balance;
+}
+
+.bouton {
+    margin: 5px;
+    display: inline-block;
+    padding: 0.375rem 0.75rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+
+    text-align: center;
+    text-decoration: none;
+
+    cursor: pointer;
+    user-select: none;
+
+    border: 2px solid black;
+    border-radius: 5px;
+    transition: all 0.4s;
+
+}
+
+.bouton:hover {
+    box-shadow: 4px 4px var(--accent-b);
+    color: var(--accent-f);
+    background-color: var(--text-color);
+    border-color: var(--text-color);
+}

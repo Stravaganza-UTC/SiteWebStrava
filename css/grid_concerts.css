@@ -1,0 +1,60 @@
+
+#gridConcerts {
+    margin-top: 30px;
+
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 320px);
+    /*grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));*/
+    grid-gap: 1rem;
+    padding: 0;
+    box-sizing: border-box;
+    justify-content: center;
+}
+
+.cardConcert {
+    border: 2px solid black;
+    border-radius: 5px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+
+    aspect-ratio: 16/23;
+
+}
+
+.cardConcertImg {
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.importantBas {
+
+    object-position: bottom;
+}
+
+.importantHaut {
+    object-position: top;
+}
+
+.cardConcertContent {
+    width: 100%;
+    /*justify-content: center;*/
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.cardConcertTitle {
+    font-size: 1.25rem;
+    font-weight: 700;
+    padding: 10px;
+}
+
+.cardConcertText {
+    margin-bottom: 10px;
+}

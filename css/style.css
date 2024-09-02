@@ -11,6 +11,7 @@
     font-family: "Segoe UI", sans-serif;
     scroll-behavior: smooth;
 }
+
 body {
     overflow-x: hidden;
     overflow-y: scroll;
@@ -29,9 +30,6 @@ body {
 
 #content {
     width: 100%;
-
-
-
 }
 
 section {
@@ -46,7 +44,6 @@ section {
     background-color: var(--rose-bg);
     padding-top: 90px;
 }
-
 
 
 .contenuConcerts {
@@ -104,6 +101,7 @@ h2 {
     text-align: center;
     padding: 10px;
 }
+
 #copyright p {
     color: #fff;
     font-weight: 400;

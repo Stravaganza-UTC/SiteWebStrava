@@ -56,8 +56,11 @@
 .actualiteLeft .contenuActu {
     flex-direction: row-reverse;
 }
-
+.actualiteLeft {
+    flex-direction: column;
+}
 .actualiteRight {
+    flex-direction: column;
     background-color: var(--rose-bg);
 }
 

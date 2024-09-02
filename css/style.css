@@ -20,9 +20,6 @@ body {
     height: 100vh;
 }
 
-.imageContenueW {
-    width: 100%;
-}
 
 #content * {
     overflow: hidden;

@@ -33,7 +33,7 @@ function show_ban() {
     }
 }
 
-window.onresize = function (event) {
+window.onresize = function () {
     if (window.innerWidth > 992) {
         document.querySelectorAll('.fermerMobile').forEach(function (el) {
             el.style.display = "flex";

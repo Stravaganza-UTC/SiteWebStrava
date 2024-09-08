@@ -3,7 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Stravaganza</title>
+    <link rel="image_src" href="images/logos/LogoStravaganza.png"/>
+    <meta name="og:title" content="Stravaganza - Galerie">
+    <meta name="og:type" content="website">
+    <meta name="og:image" content="images/logos/LogoStravaganza.png">
+    <meta name="og:description" content="Stravaganza - Orchestre symphonique étudiant de l'UTC">
+    <meta property="og:site_name" content="Stravaganza"/>
+    <meta property="og:locale" content="fr_FR">
+
+    <meta name="generator" content="Stravaganza">
+    <meta name="author" content="Stravaganza">
+    <meta name="description"
+          content="Stravaganza - Orchestre symphonique étudiant de l'UTC (Université de Technologie de Compiègne) - Strava"/>
+    <meta name="keywords" content="Orchestre,
+        Symphonique,UTC,Université de Technologie de Compiègne,Compiègne,Orchestre Etudiant,Orchestre Compiègne, Musique Compiègne"/>
+    <!--    TODO Changer "noindex" en "index"-->
+    <meta name="robots" content="noindex, follow">
+
+    <title>Stravaganza - Galerie</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/navbar.css">
     <link rel="stylesheet" href="css/presentation.css">
@@ -90,28 +107,31 @@ box-sizing: border-box; padding: 5px"
                 </div>
             </div>
             <div id="galerieBts" style="text-align: center;">
-                <a href="#printempsP24" class="bouton">Concert de Printemps P24</a>
-                <a href="#noelA23" class="bouton">Concert de Noël A23</a>
-                <a href="#printempsP23" class="bouton">Concert de Printemps P23</a>
-                <a href="#noelA22" class="bouton">Concert de Noël A22</a>
-                <a href="#printempsP22" class="bouton">Concert de Printemps P22</a>
-                <a href="#20ansA21" class="bouton">Concert des 20 ans de Strava</a>
-                <a href="#printempsP19" class="bouton">Concert de Printemps P19</a>
-                <a href="#noelA19" class="bouton">Concert de Noël A19</a>
+                <a href="#ConcertPrintempsP24" class="bouton">Concert de Printemps P24</a>
+                <a href="#ConcertNoelA23" class="bouton">Concert de Noël A23</a>
+                <a href="#ConcertPrintempsP23" class="bouton">Concert de Printemps P23</a>
+                <a href="#ConcertNoelA22" class="bouton">Concert de Noël A22</a>
+                <a href="#ConcertPrintempsP22" class="bouton">Concert de Printemps P22</a>
+                <a href="#Concert20ansA21" class="bouton">Concert des 20 ans de Strava</a>
+                <a href="#ConcertPrintempsP19" class="bouton">Concert de Printemps P19</a>
+                <a href="#ConcertNoelA19" class="bouton">Concert de Noël A19</a>
             </div>
         </div>
 
     </section>
-    <section id="printempsP24" class="actualiteLeft">
+
+    <!--    1 Sur 2 actualiteLeft / actualiteRight -->
+
+    <!-- ConcertPrintempsP24 -->
+    <section id="ConcertPrintempsP24" class="actualiteLeft">
         <div class="contenuGalerie contenuActu contenu">
             <div class="contenuGalerieTexte">
-
                 <p class="galerieTitle">Concert de Printemps P24</p>
                 <p class="galerieSubTitle">Traditionel concert de fin de semestre</p>
-
                 <p class="galerieDescr">11 juin 2024 à l'église Saint Germain<br>Avec la participation de As2Choeur</p>
-
             </div>
+
+            <!-- Image principale -->
             <div class="contenuActuImage">
                 <img src="images/ConcertPrintempsP24/AffichePrintempsP24.jpg" class="card-img-top"
                      alt="Concert de Printemps P24">
@@ -120,71 +140,285 @@ box-sizing: border-box; padding: 5px"
         </div>
         <div class="photosGalerie">
             <div class="grilleGalerie">
+                <!-- Ne pas toucher: Boutons -->
                 <button onclick="carouselClose(this);" class="btVisuImg btVisuImgClose hidden"><img
                         src="images/logos/close.svg" alt="Fermer le visualisateur d'images"/></button>
                 <button onclick="carouselScrollRight(this);" class="btVisuImg btVisuImgRight hidden"><img
                         src="images/logos/right.svg" alt="Fermer le visualisateur d'images"/></button>
                 <button onclick="carouselScrollLeft(this);" class="btVisuImg btVisuImgLeft hidden"><img
                         src="images/logos/left.svg" alt="Fermer le visualisateur d'images"/></button>
-                <div>
-                    <img src="images/ConcertNoelA23/ConcertNoelA23_01.jpg" alt="Concert de Printemps P24">
-                </div>
-                <div>
-                    <img src="images/ConcertNoelA23/ConcertNoelA23_02.jpg" alt="Concert de Printemps P24">
-                </div>
-                <div>
-                    <img src="images/ConcertNoelA23/ConcertNoelA23_03.jpg" alt="Concert de Printemps P24">
-                </div>
-                <div>
-                    <img src="images/ConcertNoelA23/ConcertNoelA23_04.jpg" alt="Concert de Printemps P24">
-                </div>
-                <div>
-                    <img src="images/ConcertNoelA23/ConcertNoelA23_05.jpg" alt="Concert de Printemps P24">
-                </div>
-                <div>
-                    <img src="images/ConcertNoelA23/ConcertNoelA23_06.jpg" alt="Concert de Printemps P24">
-                </div>
-                <div>
-                    <img src="images/ConcertNoelA23/ConcertNoelA23_07.jpg" alt="Concert de Printemps P24">
-                </div>
-                <div>
-                    <img src="images/ConcertNoelA23/ConcertNoelA23_08.jpg" alt="Concert de Printemps P24">
-                </div>
-                <div>
-                    <img src="images/ConcertNoelA23/ConcertNoelA23_09.jpg" alt="Concert de Printemps P24">
-                </div>
-                <div>
-                    <img src="images/ConcertNoelA23/ConcertNoelA23_10.jpg" alt="Concert de Printemps P24">
-                </div>
-                <div>
-                    <img src="images/ConcertNoelA23/ConcertNoelA23_11.jpg" alt="Concert de Printemps P24">
-                </div>
-                <div>
-                    <img src="images/ConcertNoelA23/ConcertNoelA23_12.jpg" alt="Concert de Printemps P24">
-                </div>
-                <div>
-                    <img src="images/ConcertNoelA23/ConcertNoelA23_13.jpg" alt="Concert de Printemps P24">
-                </div>
+
+                <!-- Images -->
+                <div><img src="images/ConcertNoelA23/ConcertNoelA23_01.jpg" alt="Concert de Printemps P24"></div>
+                <div><img src="images/ConcertNoelA23/ConcertNoelA23_02.jpg" alt="Concert de Printemps P24"></div>
+                <div><img src="images/ConcertNoelA23/ConcertNoelA23_03.jpg" alt="Concert de Printemps P24"></div>
+                <div><img src="images/ConcertNoelA23/ConcertNoelA23_04.jpg" alt="Concert de Printemps P24"></div>
+                <div><img src="images/ConcertNoelA23/ConcertNoelA23_05.jpg" alt="Concert de Printemps P24"></div>
+                <div><img src="images/ConcertNoelA23/ConcertNoelA23_06.jpg" alt="Concert de Printemps P24"></div>
+                <div><img src="images/ConcertNoelA23/ConcertNoelA23_07.jpg" alt="Concert de Printemps P24"></div>
+                <div><img src="images/ConcertNoelA23/ConcertNoelA23_08.jpg" alt="Concert de Printemps P24"></div>
+                <div><img src="images/ConcertNoelA23/ConcertNoelA23_09.jpg" alt="Concert de Printemps P24"></div>
+                <div><img src="images/ConcertNoelA23/ConcertNoelA23_10.jpg" alt="Concert de Printemps P24"></div>
+                <div><img src="images/ConcertNoelA23/ConcertNoelA23_11.jpg" alt="Concert de Printemps P24"></div>
+                <div><img src="images/ConcertNoelA23/ConcertNoelA23_12.jpg" alt="Concert de Printemps P24"></div>
+                <div><img src="images/ConcertNoelA23/ConcertNoelA23_13.jpg" alt="Concert de Printemps P24"></div>
             </div>
         </div>
 
     </section>
-    <section class="actualiteRight">
-        <div class="contenuActu contenu">
+
+    <!-- ConcertNoelA23 -->
+    <section id="ConcertNoelA23" class="actualiteRight">
+        <div class="contenuGalerie contenuActu contenu">
             <div class="contenuGalerieTexte">
-
-                <p class="galerieTitle">Concert de Printemps P24</p>
-                <p class="galerieSubTitle">Traditionel concert de fin de semestre</p>
-
-                <p class="galerieDescr">11 juin 2024 à l'église Saint Germain<br>Avec la participation de As2Choeur</p>
-
+                <p class="galerieTitle">Concert de Noël A23</p>
+                <p class="galerieSubTitle">Concert de Noël</p>
+                <p class="galerieDescr">18 décembre 2023 à l'église Saint-Germain de Compiègne<br>Avec la participation
+                    de As2Choeur</p>
+                <a class="bouton" href="https://youtu.be/mE5TZSJi3IE?si=4nAdDhjRECUZwtq3" target="_blank">Captation du Concert</a>
             </div>
+
+            <!-- Image principale -->
             <div class="contenuActuImage">
-                <img src="images/ConcertPrintempsP24/AffichePrintempsP24.jpg" class="card-img-top"
-                     alt="Concert de Printemps P24">
+                <img src="images/ConcertNoelA23/AfficheNoelA23.png" class="card-img-top"
+                     alt="Concert de Noël A23">
             </div>
 
         </div>
+        <div class="photosGalerie">
+            <div class="grilleGalerie">
+                <!-- Ne pas toucher: Boutons -->
+                <button onclick="carouselClose(this);" class="btVisuImg btVisuImgClose hidden"><img
+                        src="images/logos/close.svg" alt="Fermer le visualisateur d'images"/></button>
+                <button onclick="carouselScrollRight(this);" class="btVisuImg btVisuImgRight hidden"><img
+                        src="images/logos/right.svg" alt="Fermer le visualisateur d'images"/></button>
+                <button onclick="carouselScrollLeft(this);" class="btVisuImg btVisuImgLeft hidden"><img
+                        src="images/logos/left.svg" alt="Fermer le visualisateur d'images"/></button>
+
+                <!-- Images -->
+                <div><img src="images/ConcertNoelA23/ConcertNoelA23_01.jpg" alt="Concert de Printemps P24"></div>
+                <div><img src="images/ConcertNoelA23/ConcertNoelA23_02.jpg" alt="Concert de Printemps P24"></div>
+                <div><img src="images/ConcertNoelA23/ConcertNoelA23_03.jpg" alt="Concert de Printemps P24"></div>
+                <div><img src="images/ConcertNoelA23/ConcertNoelA23_04.jpg" alt="Concert de Printemps P24"></div>
+                <div><img src="images/ConcertNoelA23/ConcertNoelA23_05.jpg" alt="Concert de Printemps P24"></div>
+                <div><img src="images/ConcertNoelA23/ConcertNoelA23_06.jpg" alt="Concert de Printemps P24"></div>
+                <div><img src="images/ConcertNoelA23/ConcertNoelA23_07.jpg" alt="Concert de Printemps P24"></div>
+                <div><img src="images/ConcertNoelA23/ConcertNoelA23_08.jpg" alt="Concert de Printemps P24"></div>
+                <div><img src="images/ConcertNoelA23/ConcertNoelA23_09.jpg" alt="Concert de Printemps P24"></div>
+                <div><img src="images/ConcertNoelA23/ConcertNoelA23_10.jpg" alt="Concert de Printemps P24"></div>
+                <div><img src="images/ConcertNoelA23/ConcertNoelA23_11.jpg" alt="Concert de Printemps P24"></div>
+                <div><img src="images/ConcertNoelA23/ConcertNoelA23_12.jpg" alt="Concert de Printemps P24"></div>
+                <div><img src="images/ConcertNoelA23/ConcertNoelA23_13.jpg" alt="Concert de Printemps P24"></div>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- ConcertPrintempsP23 -->
+    <section id="ConcertPrintempsP23" class="actualiteLeft">
+        <div class="contenuGalerie contenuActu contenu">
+            <div class="contenuGalerieTexte">
+                <p class="galerieTitle">Concert de Printemps P23</p>
+                <p class="galerieSubTitle"></p>
+                <p class="galerieDescr">15 juin 2023 à l'église Saint-Germain de Compiègne<br>Première partie de
+                    As2Choeur</p>
+            </div>
+
+            <!-- Image principale -->
+            <div class="contenuActuImage">
+                <img src="images/ConcertPrintempsP23/AffichePrintempsP23.jpg" class="card-img-top"
+                     alt="Concert de Printemps P23">
+            </div>
+
+        </div>
+        <div class="photosGalerie">
+            <div class="grilleGalerie">
+                <!-- Ne pas toucher: Boutons -->
+                <button onclick="carouselClose(this);" class="btVisuImg btVisuImgClose hidden"><img
+                        src="images/logos/close.svg" alt="Fermer le visualisateur d'images"/></button>
+                <button onclick="carouselScrollRight(this);" class="btVisuImg btVisuImgRight hidden"><img
+                        src="images/logos/right.svg" alt="Fermer le visualisateur d'images"/></button>
+                <button onclick="carouselScrollLeft(this);" class="btVisuImg btVisuImgLeft hidden"><img
+                        src="images/logos/left.svg" alt="Fermer le visualisateur d'images"/></button>
+
+                <!-- Images -->
+                <!--                <div><img src="images/ConcertNoelA23/ConcertNoelA23_01.jpg" alt="Concert de Printemps P24"></div>-->
+
+            </div>
+        </div>
+
+    </section>
+
+    <!-- ConcertNoelA22 -->
+    <section id="ConcertNoelA22" class="actualiteRight">
+        <div class="contenuGalerie contenuActu contenu">
+            <div class="contenuGalerieTexte">
+                <p class="galerieTitle">Concert de Noël A22</p>
+                <p class="galerieSubTitle"></p>
+                <p class="galerieDescr">13 décembre 2022 à l'église Saint-Germain de Compiègne<br>Première partie de
+                    OCATA</p>
+            </div>
+
+            <!-- Image principale -->
+            <div class="contenuActuImage">
+                <img src="images/ConcertNoelA22/AfficheNoelA22.jpg" class="card-img-top"
+                     alt="Concert de Noël A22">
+            </div>
+
+        </div>
+        <div class="photosGalerie">
+            <div class="grilleGalerie">
+                <!-- Ne pas toucher: Boutons -->
+                <button onclick="carouselClose(this);" class="btVisuImg btVisuImgClose hidden"><img
+                        src="images/logos/close.svg" alt="Fermer le visualisateur d'images"/></button>
+                <button onclick="carouselScrollRight(this);" class="btVisuImg btVisuImgRight hidden"><img
+                        src="images/logos/right.svg" alt="Fermer le visualisateur d'images"/></button>
+                <button onclick="carouselScrollLeft(this);" class="btVisuImg btVisuImgLeft hidden"><img
+                        src="images/logos/left.svg" alt="Fermer le visualisateur d'images"/></button>
+
+                <!-- Images -->
+                <!--                <div><img src="images/ConcertNoelA23/ConcertNoelA23_01.jpg" alt="Concert de Printemps P24"></div>-->
+            </div>
+        </div>
+
+    </section>
+
+    <!-- ConcertPrintempsP22 -->
+    <section id="ConcertPrintempsP22" class="actualiteLeft">
+        <div class="contenuGalerie contenuActu contenu">
+            <div class="contenuGalerieTexte">
+                <p class="galerieTitle">Concert de Printemps P22</p>
+                <p class="galerieSubTitle"></p>
+                <p class="galerieDescr">31 mai 2022 à l'église Saint-Germain de Compiègne</p>
+                <a class="bouton" href="https://youtu.be/fPqsn5-c7g4?si=Rl2U6uEPQI13rqld" target="_blank">Captation du Concert</a>
+            </div>
+
+            <!-- Image principale -->
+            <div class="contenuActuImage">
+                <img src="images/ConcertPrintempsP22/AffichePrintempsP22.jpg" class="card-img-top"
+                     alt="Concert de Printemps P22">
+            </div>
+
+        </div>
+        <div class="photosGalerie">
+            <div class="grilleGalerie">
+                <!-- Ne pas toucher: Boutons -->
+                <button onclick="carouselClose(this);" class="btVisuImg btVisuImgClose hidden"><img
+                        src="images/logos/close.svg" alt="Fermer le visualisateur d'images"/></button>
+                <button onclick="carouselScrollRight(this);" class="btVisuImg btVisuImgRight hidden"><img
+                        src="images/logos/right.svg" alt="Fermer le visualisateur d'images"/></button>
+                <button onclick="carouselScrollLeft(this);" class="btVisuImg btVisuImgLeft hidden"><img
+                        src="images/logos/left.svg" alt="Fermer le visualisateur d'images"/></button>
+
+                <!-- Images -->
+                <!--                <div><img src="images/ConcertNoelA23/ConcertNoelA23_01.jpg" alt="Concert de Printemps P24"></div>-->
+            </div>
+        </div>
+
+    </section>
+
+    <!-- Concert20ansA21 -->
+    <section id="Concert20ansA21" class="actualiteRight">
+        <div class="contenuGalerie contenuActu contenu">
+            <div class="contenuGalerieTexte">
+                <p class="galerieTitle">Concert des 20 ans de Strava</p>
+                <p class="galerieSubTitle">A l'occasion des 20 ans de Stravaganza, l'orchestre a donné un concert monté
+                    avec l'appui des Frivolités Parisiennes.</p>
+                <p class="galerieDescr">4 janvier 2022 à l'Espace Jean Legendre de Compiègne<br>Première partie des
+                    étudiants de l'UV MU03</p>
+                <a class="bouton" href="https://youtu.be/BbCDa4jMthM?si=dD3ijfj5MwLZWfym" target="_blank">Captation du Concert</a>
+            </div>
+
+            <!-- Image principale -->
+            <div class="contenuActuImage">
+                <img src="images/Concert20ansA21/AfficheConcert20ansA21.jpg" class="card-img-top"
+                     alt="Concert des 20 ans de Strava">
+            </div>
+
+        </div>
+        <div class="photosGalerie">
+            <div class="grilleGalerie">
+                <!-- Ne pas toucher: Boutons -->
+                <button onclick="carouselClose(this);" class="btVisuImg btVisuImgClose hidden"><img
+                        src="images/logos/close.svg" alt="Fermer le visualisateur d'images"/></button>
+                <button onclick="carouselScrollRight(this);" class="btVisuImg btVisuImgRight hidden"><img
+                        src="images/logos/right.svg" alt="Fermer le visualisateur d'images"/></button>
+                <button onclick="carouselScrollLeft(this);" class="btVisuImg btVisuImgLeft hidden"><img
+                        src="images/logos/left.svg" alt="Fermer le visualisateur d'images"/></button>
+
+                <!-- Images -->
+                <!--                <div><img src="images/ConcertNoelA23/ConcertNoelA23_01.jpg" alt="Concert de Printemps P24"></div>-->
+            </div>
+        </div>
+
+    </section>
+
+    <!-- ConcertPrintempsP19 -->
+    <section id="ConcertPrintempsP19" class="actualiteLeft">
+        <div class="contenuGalerie contenuActu contenu">
+            <div class="contenuGalerieTexte">
+                <p class="galerieTitle">Concert de Printemps P19</p>
+                <p class="galerieSubTitle"></p>
+                <p class="galerieDescr">17 juin 2019 à l'église Saint-Germain de Compiègne<br>En collaboration avec OCATA</p>
+                <a class="bouton" href="https://soundcloud.com/stravaganza/sets/concert-de-printemps-2019?si=d29e9134e90e440bb4e7e8df2cc64ccf&utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing" target="_blank">Enregistrement du Concert</a>
+            </div>
+
+            <!-- Image principale -->
+            <div class="contenuActuImage">
+                <img src="images/ConcertPrintempsP19/AffichePrintempsP19.jpg" class="card-img-top"
+                     alt="Concert de Printemps P19">
+            </div>
+
+        </div>
+        <div class="photosGalerie">
+            <div class="grilleGalerie">
+                <!-- Ne pas toucher: Boutons -->
+                <button onclick="carouselClose(this);" class="btVisuImg btVisuImgClose hidden"><img
+                        src="images/logos/close.svg" alt="Fermer le visualisateur d'images"/></button>
+                <button onclick="carouselScrollRight(this);" class="btVisuImg btVisuImgRight hidden"><img
+                        src="images/logos/right.svg" alt="Fermer le visualisateur d'images"/></button>
+                <button onclick="carouselScrollLeft(this);" class="btVisuImg btVisuImgLeft hidden"><img
+                        src="images/logos/left.svg" alt="Fermer le visualisateur d'images"/></button>
+
+                <!-- Images -->
+                <!--                <div><img src="images/ConcertNoelA23/ConcertNoelA23_01.jpg" alt="Concert de Printemps P24"></div>-->
+            </div>
+        </div>
+
+    </section>
+
+    <!-- ConcertNoelA19 -->
+    <section id="ConcertNoelA19" class="actualiteRight">
+        <div class="contenuGalerie contenuActu contenu">
+            <div class="contenuGalerieTexte">
+                <p class="galerieTitle">Concert de Noël A19</p>
+                <p class="galerieSubTitle"></p>
+                <p class="galerieDescr">DATE à l'église Saint-Germain de Compiègne<br>En collaboration avec OCATA ??</p>
+                <a class="bouton" href="https://soundcloud.com/stravaganza/sets/concert-de-noel-2019?si=362e0c2e6a544388ba124d404600e787&utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing" target="_blank">Enregistrement du Concert</a>
+            </div>
+
+            <!-- Image principale -->
+<!--            <div class="contenuActuImage">-->
+<!--                <img src="images/ConcertPrintempsP19/AffichePrintempsP19.jpg" class="card-img-top"-->
+<!--                     alt="Concert de Noël A19">-->
+<!--            </div>-->
+
+        </div>
+        <div class="photosGalerie">
+            <div class="grilleGalerie">
+                <!-- Ne pas toucher: Boutons -->
+                <button onclick="carouselClose(this);" class="btVisuImg btVisuImgClose hidden"><img
+                        src="images/logos/close.svg" alt="Fermer le visualisateur d'images"/></button>
+                <button onclick="carouselScrollRight(this);" class="btVisuImg btVisuImgRight hidden"><img
+                        src="images/logos/right.svg" alt="Fermer le visualisateur d'images"/></button>
+                <button onclick="carouselScrollLeft(this);" class="btVisuImg btVisuImgLeft hidden"><img
+                        src="images/logos/left.svg" alt="Fermer le visualisateur d'images"/></button>
+
+                <!-- Images -->
+                <!--                <div><img src="images/ConcertNoelA23/ConcertNoelA23_01.jpg" alt="Concert de Printemps P24"></div>-->
+            </div>
+        </div>
+
     </section>
 
     <div id="copyright">

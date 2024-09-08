@@ -30,6 +30,7 @@
     width: 100%;
     object-fit: cover;
     object-position: center;
+    aspect-ratio: 1/1;
 }
 
 .importantBas {
@@ -53,8 +54,10 @@
     font-size: 1.25rem;
     font-weight: 700;
     padding: 10px;
+    min-height: 1.25rem;
 }
 
 .cardConcertText {
     margin-bottom: 10px;
+    /*min-height: 1rem;*/
 }

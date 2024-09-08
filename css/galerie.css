@@ -55,7 +55,10 @@
     padding-top: 5px;
     padding-bottom: 10px;
 }
-
+.galerieDescr {
+    margin-bottom: 20px;
+    text-align: center;
+}
 .contenuGalerieTexte {
     display: flex;
     justify-content: center;

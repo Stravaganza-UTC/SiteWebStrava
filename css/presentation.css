@@ -2,7 +2,8 @@
     padding-right: 15px;
     flex: 1;
     align-content: center;
-
+    text-wrap: auto;
+    width: 100%;
 }
 
 .presentationTexte p {
@@ -47,8 +48,11 @@ h1 {
     }
 
     h1 {
-        font-size: 3.5rem;
+        font-size: min(14vw, 3.5rem);
 
+    }
+    .presentationTexte {
+        padding-right: 0;
     }
 }
 

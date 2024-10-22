@@ -1,20 +1,23 @@
 // Légende dans le alt
 // Si déjà un paragraphe, le alt ne devient pas légende
 let oldGalerieScroll = 0;
-const divs = Array.from(document.querySelectorAll('.grilleGalerie > div'));
 
-divs.forEach((div) => {
-    let alt = div.querySelector("img").alt;
-    // Vérifier qu'il n'y a pas de p dans les enfants
-    if (div.querySelector("p") == null) {
-        // Ajouter un p avec la légende
-        let p = document.createElement("p");
-        p.innerText = alt;
-        div.appendChild(p);
-    }
-    div.addEventListener('click', () => {
-        const index = divs.indexOf(div);
-        carousel(div, index);
+document.querySelectorAll(".grilleGalerie").forEach((grilleGalerie) => {
+    const divs = Array.from(grilleGalerie.querySelectorAll('div'));
+
+    divs.forEach((div) => {
+        let alt = div.querySelector("img").alt;
+        // Vérifier qu'il n'y a pas de p dans les enfants
+        if (div.querySelector("p") == null) {
+            // Ajouter un p avec la légende
+            let p = document.createElement("p");
+            p.innerText = alt;
+            div.appendChild(p);
+        }
+        div.addEventListener('click', () => {
+            const index = divs.indexOf(div);
+            carousel(div, index);
+        });
     });
 });
 

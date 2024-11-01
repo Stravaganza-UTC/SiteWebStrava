@@ -1,12 +1,13 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
 
     <base href="/SiteWebStrava/">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <link rel="image_src" href="images/logos/LogoStravaganza.png"/>
+    <link rel="image_src" href="images/logos/LogoStravaganza.png" />
     <link rel="icon" href="images/logos/LogoStravaganza.png">
     <meta name="og:title" content="Stravaganza - Accueil">
     <meta name="og:type" content="website">
@@ -14,15 +15,16 @@
     <meta name="og:image" content="https://phonyc.github.io/SiteWebStrava/images/logos/LogoStravaganza.png">
     <meta name="og:url" content="https://phonyc.github.io/SiteWebStrava/">
     <meta name="og:description" content="Stravaganza - Orchestre symphonique étudiant de l'UTC">
-    <meta property="og:site_name" content="Stravaganza"/>
+    <meta property="og:site_name" content="Stravaganza" />
     <meta property="og:locale" content="fr_FR">
 
     <meta name="generator" content="Stravaganza">
     <meta name="author" content="Stravaganza">
     <meta name="description"
-          content="Stravaganza - Orchestre symphonique étudiant de l'UTC (Université de Technologie de Compiègne) - Strava"/>
-    <meta name="keywords" content="Orchestre,
-        Symphonique,UTC,Université de Technologie de Compiègne,Compiègne,Orchestre Etudiant,Orchestre Compiègne, Musique Compiègne"/>
+        content="Stravaganza - Orchestre symphonique étudiant de l'UTC (Université de Technologie de Compiègne) - Strava" />
+    <meta name="keywords"
+        content="Orchestre,
+        Symphonique,UTC,Université de Technologie de Compiègne,Compiègne,Orchestre Etudiant,Orchestre Compiègne, Musique Compiègne" />
     <!--    TODO Changer "noindex" en "index"-->
     <meta name="robots" content="noindex, follow">
 
@@ -37,160 +39,201 @@
 </head>
 
 <body>
-<script>
-    if (window.location.href.indexOf("index.html") > -1) {
-        window.location = window.location.href.replace("index.html", "");
-    }
-</script>
+    <script>
+        if (window.location.href.indexOf("index.html") > -1) {
+            window.location = window.location.href.replace("index.html", "");
+        }
+    </script>
 
-<div class="fermerMobile navbardepl"></div>
-<div class="navbar">
-    <div class="navbarIn">
+    <!-- Bloc opaque qui s'ajoute quand on déplie la nabar en mobile -->
+    <div class="fermerMobile navbardepl"></div>
 
-
-        <div id="mobilebarContent">
-            <a id="logo" href=".">
-                <img style="height: 100%;
-box-sizing: border-box; padding: 5px"
-                     src="images/logos/LogoStravaganza.png"
-                     alt="Accueil">
-                <p class="navTitle">Stravaganza</p></a>
-            <div class="showMobile" style="flex: 1;">
+    <!-- Barre de navigation -->
+    <div class="navbar">
+        <div class="navbarIn">
+            <!-- Bloc logo (Logo + Texte)
+            Sur mobile : la barre en haut (avec le bouton pour déplier)
+            Sur ordinateur : uniquement la barre contenant le texte et le logo
+        -->
+            <div id="mobilebarContent">
+                <a id="logo" href=".">
+                    <img style="height: 100%; box-sizing: border-box; padding: 5px"
+                        src="images/logos/LogoStravaganza.png" alt="Accueil">
+                    <p class="navTitle">Stravaganza</p>
+                </a>
+                <div class="showMobile" style="flex: 1;">
+                </div>
+                <!-- Bouton qui apparait quand on est sur mobile -->
+                <div class="hamburger showMobile">
+                    <button onclick="show_ban();" class="burgerButton"><img id="burgerButton" style="display: block"
+                            src="images/logos/burger.svg" alt="Ouvrir le menu" /><img id="closeButton"
+                            style="display: none" src="images/logos/close.svg" alt="Fermer le menu" />
+                    </button>
+                </div>
             </div>
-            <div class="hamburger showMobile">
-                <button onclick="show_ban();" class="burgerButton"><img id="burgerButton" style="display: block"
-                                                                        src="images/logos/burger.svg"
-                                                                        alt="Ouvrir le menu"/><img id="closeButton"
-                                                                                                   style="display: none"
-                                                                                                   src="images/logos/close.svg"
-                                                                                                   alt="Fermer le menu"/>
-                </button>
-            </div>
-        </div>
-        <nav class="liensNav">
-            <ul class="liensNavUl fermerMobile">
-                <li class="navItem">
-                    <a class="navLink" onclick="show_ban();" href="#presentation">L'orchestre</a>
-                </li>
-                <li class="navItem">
-                    <a class="navLink" onclick="show_ban();" href="#concerts">Concerts</a>
-                </li>
-                <li class="navItem">
-                    <a class="navLink" onclick="show_ban();" href="actualites.html">Actualités</a>
-                </li>
-                <li class="navItem">
-                    <a class="navLink" onclick="show_ban();" href="galerie.html">Galerie</a>
-                </li>
-                <li class="navItem">
-                    <a class="navLink" onclick="show_ban();" href="#contact">Contact</a>
-                </li>
+
+            <!-- Bloc des liens -->
+            <nav class="liensNav">
+                <ul class="liensNavUl fermerMobile">
+                    <li class="navItem">
+                        <a class="navLink" onclick="show_ban();" href="index.html#presentation">L'orchestre</a>
+                    </li>
+                    <li class="navItem">
+                        <a class="navLink" onclick="show_ban();" href="index.html#concerts">Concerts</a>
+                    </li>
+                    <li class="navItem">
+                        <a class="navLink" onclick="show_ban();" href="actualites.html">Actualités</a>
+                    </li>
+                    <li class="navItem">
+                        <a class="navLink" onclick="show_ban();" href="galerie.html">Galerie</a>
+                    </li>
+                    <li class="navItem">
+                        <a class="navLink" onclick="show_ban();" href="index.html#contact">Contact</a>
+                    </li>
+
+                </ul>
+            </nav>
+
+            <!-- Bloc des lien de réseaux sociaux -->
+            <ul class="liensNavSoc fermerMobile">
+                <a class="navLink" href="https://instagram.com/stravaganza_utc">
+                    <img src="images/logos/instagram.svg" alt="Instagram"></a>
+                <a class="navLink" href="https://facebook.com/stravaganza.utc">
+                    <img src="images/logos/facebook.svg" alt="Facebook"></a>
+                <a class="navLink" href="mailto:stravaganza@assos.utc.fr">
+                    <img src="images/logos/mail.svg" alt="Mail"></a>
 
             </ul>
-        </nav>
-        <ul class="liensNavSoc fermerMobile">
-            <a class="navLink" href="https://instagram.com/stravaganza_utc">
-                <img src="images/logos/instagram.svg" alt="Instagram"></a>
-            <a class="navLink" href="https://facebook.com/stravaganza.utc">
-                <img src="images/logos/facebook.svg" alt="Facebook"></a>
-            <a class="navLink" href="mailto:stravaganza@assos.utc.fr">
-                <img src="images/logos/mail.svg" alt="Mail"></a>
-
-        </ul>
-
-    </div>
-</div>
-
-
-<div id="content">
-    <section id="presentation">
-
-        <div class="contenu contenuPres">
-            <div class="presentationTexte">
-                <h1>Orchestre symphonique étudiant de l'UTC</h1>
-                <p>Stravaganza c’est l’orchestre de musique classique et variée de l’UTC. Il regroupe une quarantaine de
-                    musiciens de tous niveaux pour y jouer de tous styles de musiques : de films, de jeux vidéo,
-                    classiques, des adaptations de chansons pop ou même rock… Niveau représentations, on participe à la
-                    fois à des événements UTCéens et extérieurs, mais surtout on monte notre propre concert, LE concert
-                    à ne pas manquer !
-                </p>
-            </div>
-            <div class="presentationImage">
-                <img src="images/OrchestreP24.jpg" id="imagePres" alt="Orchestre">
-            </div>
         </div>
+    </div>
 
-    </section>
-    <section id="concerts">
-        <div class="contenuConcerts contenu">
-            <h2>Concerts</h2>
-            <p style="text-align: center;margin-top: 10px">Nous n'avons pas encore de concerts prévus pour le prochain
-                semestre :)</p>
-            <p style="text-align: center;font-size: 1.75rem;margin-top: 35px">Nos derniers concerts</p>
-            <div id="gridConcerts">
+    <!-- Contenu du site -->
+    <div id="content">
+        <!-- La page est consituée de plusieurs sections, l'id permet de pouvoir y accéder avec un # (cf. navigation)
+    
+    Les couleurs de fond sont définies dans styles.css
+    -->
 
-                <!-- ConcertPrintempsP24 -->
+        <section id="presentation">
+            <!-- Contenu de présentation -->
+            <div class="contenu contenuPres">
+                <!-- Partie textuelle -->
+                <div class="presentationTexte">
+                    <h1>Orchestre symphonique étudiant de l'UTC</h1>
+
+                    <p>Stravaganza c’est l’orchestre de musique classique et variée de l’UTC. Il regroupe une
+                        quarantaine de
+                        musiciens de tous niveaux pour y jouer de tous styles de musiques : de films, de jeux vidéo,
+                        classiques, des adaptations de chansons pop ou même rock… Niveau représentations, on participe à
+                        la
+                        fois à des événements UTCéens et extérieurs, mais surtout on monte notre propre concert, LE
+                        concert
+                        à ne pas manquer !
+                    </p>
+                </div>
+                <!-- Partie image -->
+                <div class="presentationImage">
+                    <img src="images/OrchestreP24.jpg" id="imagePres" alt="Orchestre">
+                </div>
+            </div>
+
+        </section>
+
+        <!-- Section des concerts -->
+        <section id="concerts">
+            <div class="contenuConcerts contenu">
+                <h2>Concerts</h2>
+                <p style="text-align: center;margin-top: 10px">Nous n'avons pas encore de concerts prévus pour le
+                    prochain semestre :)</p>
+                <p style="text-align: center;font-size: 1.75rem;margin-top: 35px">Nos derniers concerts</p>
+
+                <!-- Grille contenant les cartes des concerts -->
+                <!-- Une carte par concert -->
+
+                <!-- Exemple
                 <div class="cardConcert">
-                    <img src="images/ConcertPrintempsP24/ConcertP24_Carré.jpg" class="cardConcertImg importantBas"
-                         alt="Affiche de Concert">
+                    <img src="images/ConcertPrintempsP24/ConcertP24_Carré.jpg" class="cardConcertImg importantBas" alt="Affiche de Concert">
                     <div class="cardConcertContent">
                         <h5 class="cardConcertTitle">Concert de Printemps P24</h5>
                         <p class="cardConcertText">11 juin 2024</p>
                         <a href="galerie.html#ConcertPrintempsP24" class="bouton">Photos & Vidéos</a>
                     </div>
                 </div>
+            -->
 
-                <!-- ConcertNoelA23 -->
-                <div class="cardConcert">
-                    <img src="images/ConcertNoelA23/ConcertA23_Carré.png" class="cardConcertImg importantBas"
-                         alt="Affiche de Concert">
-                    <div class="cardConcertContent">
-                        <h5 class="cardConcertTitle">Concert de Noël A23</h5>
-                        <p class="cardConcertText">18 décembre 2023</p>
-                        <a href="galerie.html#ConcertNoelA23" class="bouton">Photos & Vidéos</a>
+                <div id="gridConcerts">
+                    <!-- ConcertPrintempsP24 -->
+                    <div class="cardConcert">
+                        <img src="images/ConcertPrintempsP24/ConcertP24_Carré.jpg" class="cardConcertImg importantBas"
+                            alt="Affiche de Concert">
+                        <div class="cardConcertContent">
+                            <h5 class="cardConcertTitle">Concert de Printemps P24</h5>
+                            <p class="cardConcertText">11 juin 2024</p>
+                            <a href="galerie.html#ConcertPrintempsP24" class="bouton">Photos & Vidéos</a>
+                        </div>
                     </div>
-                </div>
 
-                <!-- Voir Plus -->
-                <div class="cardConcert">
-                    <img src="images/Orchestre2P24.jpg" class="cardConcertImg importantBas"
-                         alt="Affiche de Concert">
-                    <div class="cardConcertContent">
-                        <h5 class="cardConcertTitle">Autres Concerts</h5>
-                        <p class="cardConcertText"></p>
-                        <a href="actualites.html" class="bouton">Voir Plus</a>
+                    <!-- ConcertNoelA23 -->
+                    <div class="cardConcert">
+                        <img src="images/ConcertNoelA23/ConcertA23_Carré.png" class="cardConcertImg importantBas"
+                            alt="Affiche de Concert">
+                        <div class="cardConcertContent">
+                            <h5 class="cardConcertTitle">Concert de Noël A23</h5>
+                            <p class="cardConcertText">18 décembre 2023</p>
+                            <a href="galerie.html#ConcertNoelA23" class="bouton">Photos & Vidéos</a>
+                        </div>
+                    </div>
+
+                    <!-- Voir Plus -->
+                    <div class="cardConcert">
+                        <img src="images/Orchestre2P24.jpg" class="cardConcertImg importantBas"
+                            alt="Affiche de Concert">
+                        <div class="cardConcertContent">
+                            <h5 class="cardConcertTitle">Autres Concerts</h5>
+                            <p class="cardConcertText"></p>
+                            <a href="actualites.html" class="bouton">Voir Plus</a>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
+        </section>
 
-    </section>
-    <section id="contact">
-        <div class="contenu contenuConcerts">
-            <h2>Nous contacter</h2>
-            <p style="text-align: center;margin-top: 10px;">Si vous souhaitez nous rejoindre, ou avoir plus
-                d'informations, n'hésitez pas
-                à nous contacter !</p>
-            <div class="contact">
+        <!-- Section de contact -->
+        <section id="contact">
+            <div class="contenu contenuConcerts">
+                <h2>Nous contacter</h2>
+                <p style="text-align: center;margin-top: 10px;">Si vous souhaitez nous rejoindre, ou avoir plus
+                    d'informations, n'hésitez pas
+                    à nous contacter !</p>
 
-                <a class="contactLink" href="https://instagram.com/stravaganza_utc">
-                    <img src="images/logos/instagram.svg" alt="Instagram">
-                    <p>stravaganza_utc</p></a>
-                <a class="contactLink" href="https://facebook.com/stravaganza.utc">
-                    <img src="images/logos/facebook.svg" alt="Facebook">
-                    <p>Strava Ganza</p></a>
-                <a class="contactLink" href="mailto:stravaganza@assos.utc.fr">
-                    <img src="images/logos/mail.svg" alt="Mail">
-                    <p>stravaganza@assos.utc.fr</p></a>
+                <!-- Réseaux -->
+                <div class="contact">
+                    <a class="contactLink" href="https://instagram.com/stravaganza_utc">
+                        <img src="images/logos/instagram.svg" alt="Instagram">
+                        <p>stravaganza_utc</p>
+                    </a>
 
+                    <a class="contactLink" href="https://facebook.com/stravaganza.utc">
+                        <img src="images/logos/facebook.svg" alt="Facebook">
+                        <p>Strava Ganza</p>
+                    </a>
+
+                    <a class="contactLink" href="mailto:stravaganza@assos.utc.fr">
+                        <img src="images/logos/mail.svg" alt="Mail">
+                        <p>stravaganza@assos.utc.fr</p>
+                    </a>
+
+                </div>
             </div>
-        </div>
 
-    </section>
-    <div id="copyright">
-        <p>© 2024. All Rights Reserved.</p>
+        </section>
+        
+        <div id="copyright">
+            <p>© 2024. All Rights Reserved.</p>
+        </div>
     </div>
-</div>
 
 
 </body>
+
 </html>

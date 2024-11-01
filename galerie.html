@@ -36,20 +36,25 @@
 </head>
 
 <body>
+<!-- Bloc opaque qui s'ajoute quand on déplie la nabar en mobile -->
 <div class="fermerMobile navbardepl"></div>
+
+<!-- Barre de navigation -->
 <div class="navbar">
     <div class="navbarIn">
-
-
+        <!-- Bloc logo (Logo + Texte)
+            Sur mobile : la barre en haut (avec le bouton pour déplier)
+            Sur ordinateur : uniquement la barre contenant le texte et le logo
+        -->
         <div id="mobilebarContent">
             <a id="logo" href=".">
-                <img style="height: 100%;
-box-sizing: border-box; padding: 5px"
+                <img style="height: 100%; box-sizing: border-box; padding: 5px"
                      src="images/logos/LogoStravaganza.png"
                      alt="Accueil">
                 <p class="navTitle">Stravaganza</p></a>
             <div class="showMobile" style="flex: 1;">
             </div>
+            <!-- Bouton qui apparait quand on est sur mobile -->
             <div class="hamburger showMobile">
                 <button onclick="show_ban();" class="burgerButton"><img id="burgerButton" style="display: block"
                                                                         src="images/logos/burger.svg"
@@ -60,6 +65,8 @@ box-sizing: border-box; padding: 5px"
                 </button>
             </div>
         </div>
+
+        <!-- Bloc des liens -->
         <nav class="liensNav">
             <ul class="liensNavUl fermerMobile">
                 <li class="navItem">
@@ -80,6 +87,8 @@ box-sizing: border-box; padding: 5px"
 
             </ul>
         </nav>
+
+        <!-- Bloc des lien de réseaux sociaux -->
         <ul class="liensNavSoc fermerMobile">
             <a class="navLink" href="https://instagram.com/stravaganza_utc">
                 <img src="images/logos/instagram.svg" alt="Instagram"></a>
@@ -89,12 +98,12 @@ box-sizing: border-box; padding: 5px"
                 <img src="images/logos/mail.svg" alt="Mail"></a>
 
         </ul>
-
     </div>
 </div>
 
-
+<!-- Contenu du site -->
 <div id="content">
+    <!-- Section qui rassemble les liens vers les albums -->
     <section id="presentationGalerie">
         <div class="contenu">
             <div id="galeriePres" class="contenuPres">
@@ -168,7 +177,6 @@ box-sizing: border-box; padding: 5px"
                 <div><img src="images/ConcertNoelA23/ConcertNoelA23_13.jpg" alt="Concert de Printemps P24"></div>
             </div>
         </div>
-
     </section>
 
     <!-- ConcertNoelA23 -->
@@ -177,8 +185,7 @@ box-sizing: border-box; padding: 5px"
             <div class="contenuGalerieTexte">
                 <p class="galerieTitle">Concert de Noël A23</p>
                 <p class="galerieSubTitle">Concert de Noël</p>
-                <p class="galerieDescr">18 décembre 2023 à l'église Saint-Germain de Compiègne<br>Avec la participation
-                    de As2Choeur</p>
+                <p class="galerieDescr">18 décembre 2023 à l'église Saint-Germain de Compiègne<br>Avec la participation de As2Choeur</p>
                 <a class="bouton" href="https://youtu.be/mE5TZSJi3IE?si=4nAdDhjRECUZwtq3" target="_blank">Captation du Concert</a>
             </div>
 

@@ -21,7 +21,7 @@
 
 .contenuActuImage img {
     flex: 1;
-    max-height: calc(90vh - var(--navbar-height));
+    max-height: calc(70vh - var(--navbar-height));
     max-width: 90vw;
     object-fit: contain;
 }
